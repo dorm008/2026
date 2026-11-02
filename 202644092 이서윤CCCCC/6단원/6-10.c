@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int cnt3 = 0;
+    int cnt5 = 0;
+    int i;
+
+    for (i = 1; i <= 10; i++)
+    {
+        scanf("%d", &n);
+
+        if (n % 3 == 0)
+        {
+            cnt3++;
+        }
+
+        if (n % 5 == 0)
+        {
+            cnt5++;
+        }
+    }
+
+    printf("Multiples of 3 : %d\n", cnt3);
+    printf("Multiples of 5 : %d", cnt5);
+
+    return 0;
+}

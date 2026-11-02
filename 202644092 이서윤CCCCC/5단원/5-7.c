@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n, cnt = 0, sum = 0;
+
+    while (1) {
+        scanf("%d", &n);
+
+        if (n == 0)
+            break;
+
+        cnt++;
+        sum += n;
+    }
+
+    printf("cnt = %d\n", cnt);
+    printf("sum = %d\n", sum);
+    printf("avg = %.2f\n", (double)sum / cnt);
+
+    return 0;
+}
