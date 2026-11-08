@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5];
+    int i;
+    int sum = 0;
+
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    sum = arr[0] + arr[2] + arr[4];
+
+    printf("%d", sum);
+
+    return 0;
+}
